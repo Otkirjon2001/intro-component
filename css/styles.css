@@ -1,4 +1,7 @@
 /* GLOBAL */
+:root{
+  --brand-color: #fff;
+}
 html{
   box-sizing: border-box;
   height: 100%;
@@ -13,11 +16,13 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-style: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #000;
+  font-family:"Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #F1F4FF;
+  color: var(--brand-color);
 }
 img{
   max-width: 100%;
@@ -28,9 +33,17 @@ img{
 /* CONTAINER  */
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
   padding-right: 50px;
   padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.min-container{
+  width: 100%;
+  max-width: 500px;
+  padding-right: 25px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -38,4 +51,151 @@ img{
 /* MAIN CONTENT  */
 .main-content{
   flex-grow: 1;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* HERO  */
+.hero {
+  width: 100%;
+  max-width: 570px;
+  margin-right: 12px;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-radius: 20px;
+}
+.hero-min-container {
+  padding-top: 55px;
+  padding-bottom: 200px;
+}
+.hero-top-text {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding: 5px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid var(--brand-color);
+  border-radius: 41px;
+  opacity: 0.8;
+}
+.hero-content{
+  width: 100%;
+  max-width: 390px;
+}
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+}
+.hero-text {
+  width: 347px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.about-prices {
+  background-color: #4DC490;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.about-prices-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+/* CONTACT  */
+.contact {
+  width: 100%;
+  max-width: 570px;
+  background-color: var(--brand-color);
+  border-radius: 20px;
+}
+.contact-min-container {
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+.contact-heading {
+  margin-top: 0;
+  margin-bottom: 70px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  color: #000000;
+  }
+.contact-form {
+  margin-bottom: 8px;
+}
+.form-input{
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border:0;
+  border-bottom: 1px solid #000;
+}
+.form-input:not(:nth-child(4)){
+  margin-bottom: 24px;
+}
+
+.user-name {
+
+}
+.user-last-name {
+}
+.user-email-address {
+}
+.user-password {
+  margin-bottom: 63px;
+}
+.form-button {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  line-height: 19px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #655AF2;
+  color: var(--brand-color);
+}
+.contact-bottom{
+  text-align: center;
+}
+.contact-bottom-text {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: #555555;
+}
+.contact-bottom-link {
+  color: #F03535;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .hero{
+    background-image: url("../img/hero-bg@2x.jpg");
+  }
+
 }
