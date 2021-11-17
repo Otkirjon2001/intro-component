@@ -33,9 +33,9 @@ img{
 /* CONTAINER  */
 .container{
   width: 100%;
-  max-width: 1240px;
-  padding-right: 50px;
-  padding-left: 50px;
+  max-width: 1202px;
+  padding-right: 25px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -55,6 +55,7 @@ img{
 .main-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -66,7 +67,7 @@ img{
   margin-right: 12px;
   background-image: url("../img/hero-bg.jpg");
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: center center;
   border-radius: 20px;
 }
 .hero-min-container {
@@ -149,14 +150,6 @@ img{
 .form-input:not(:nth-child(4)){
   margin-bottom: 24px;
 }
-
-.user-name {
-
-}
-.user-last-name {
-}
-.user-email-address {
-}
 .user-password {
   margin-bottom: 63px;
 }
@@ -171,6 +164,13 @@ img{
   cursor: pointer;
   background-color: #655AF2;
   color: var(--brand-color);
+  transition: background-color 0.4s ease, opacity 0.4s ease;
+}
+.form-button:hover{
+  background-color: #3A2BF8;
+}
+.form-button:active{
+  opacity: 0.8;
 }
 .contact-bottom{
   text-align: center;
