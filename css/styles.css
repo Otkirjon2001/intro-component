@@ -80,10 +80,11 @@ img{
 
 /* CONTAINER  */
 .container{
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1202px;
   width: 100%;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 80px 25px 80px 25px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -100,12 +101,7 @@ img{
 .main-content{
   flex-grow: 1;
 }
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
+
 
 /* HERO  */
 .hero {
@@ -121,11 +117,11 @@ img{
   background-repeat: no-repeat;
   background-position: center center;
 }
-.hero-min-container {
+.hero__container {
   margin-bottom: auto;
   padding-top: 55px;
 }
-.hero-top-text {
+.hero__top-text {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 60px;
@@ -137,18 +133,18 @@ img{
   border-radius: 41px;
   opacity: 0.8;
 }
-.hero-content{
+.hero__content{
   max-width: 390px;
   width: 100%;
 }
-.hero-heading {
+.hero__heading {
   margin-top: 0;
   margin-bottom: 25px;
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
 }
-.hero-text {
+.hero__text {
   width: 347px;
   margin-top: 0;
   margin-bottom: 0;
@@ -159,7 +155,7 @@ img{
   background-color: #4DC490;
   text-align: center;
 }
-.about-prices-text {
+.about-prices__text {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 29px;
@@ -176,11 +172,11 @@ img{
   border-radius: 20px;
   background-color: var(--brand-color);
 }
-.contact-min-container {
+.contact__container {
   padding-top: 55px;
   padding-bottom: 40px;
 }
-.contact-heading {
+.contact__heading {
   margin-top: 0;
   margin-bottom: 70px;
   font-weight: 600;
@@ -188,33 +184,33 @@ img{
   line-height: 42px;
   color: #000000;
 }
-.contact-form {
+.contact__form {
   margin-bottom: 8px;
 }
-.form-input{
+.contact__input{
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
   border:0;
   border-bottom: 1px solid #000;
 }
-.form-input:not(:nth-child(4)){
+.contact__input:not(:nth-child(4)){
   margin-bottom: 24px;
 }
-.form-input:focus{
+.contact__input:focus{
   border-color: #000;
 }
-.form-input:-webkit-autofill,
-.form-input:-webkit-autofill:hover,
-.form-input:-webkit-autofill:focus{
+.contact__input:-webkit-autofill,
+.contact__input:-webkit-autofill:hover,
+.contact__input:-webkit-autofill:focus{
   -webkit-text-fill-color: #000;
   background-color: var(--brand-color);
   transition: background-color 5000s ease-in-out 0s;
 }
-.user-password {
+.contact__input:nth-child(4) {
   margin-bottom: 63px;
 }
-.form-button {
+.contact__button {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -227,16 +223,16 @@ img{
   background-color: #655AF2;
   transition: background-color 0.4s ease, opacity 0.4s ease;
 }
-.form-button:hover{
+.contact__button:hover{
   background-color: #3A2BF8;
 }
-.form-button:active{
+.contact__button:active{
   opacity: 0.8;
 }
-.contact-bottom{
+.conditions{
   text-align: center;
 }
-.contact-bottom-text {
+.conditions__text {
   margin-top: 0;
   font-weight: normal;
   font-size: 11px;
